@@ -4,9 +4,12 @@ import Routes from './routes';
 import history from './services/history';
 import './config/ReactotronConfig';
 
+import GlobalStyle from './styles/global';
+
 function App() {
   return (
     <Router history={history}>
+      <GlobalStyle />
       <Routes />
     </Router>
   );
