@@ -22,11 +22,22 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-param-reassign': 'off',
     camelcase: 'off',
-    'no-unused-vars': ['error', {argsIgnorePattern: 'next'}],
-    'react/jsx-filename-extension': ['warn', {extensions: ['.jsx', '.js']}],
+    'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
     'import/prefer-default-export': 'off',
     'react/state-in-constructor': 'off',
     'react/static-property-placement': 'off',
     'react/jsx-props-no-spreading': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      alias: [
+        ['config', './src/config'],
+        ['pages', './src/pages'],
+        ['routes', './src/routes'],
+        ['services', './src/services'],
+        ['styles', './src/styles'],
+      ],
+    },
   },
 };
