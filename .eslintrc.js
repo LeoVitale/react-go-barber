@@ -37,6 +37,7 @@ module.exports = {
         ['routes', './src/routes'],
         ['services', './src/services'],
         ['styles', './src/styles'],
+        ['assets', './src/assets'],
       ],
     },
   },
